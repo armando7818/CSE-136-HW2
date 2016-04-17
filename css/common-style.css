@@ -1,1 +1,69 @@
-/*Input, button  */
+.btn{
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border:1px solid black;
+}
+
+.btn-default
+{
+	background-color: white; 
+	color: black;
+}
+
+.btn-default:hover
+{	
+	background-color: rgb(238, 238, 238); 
+}
+
+.btn-default:active
+{
+	background-color: rgb(211,211,211);
+}
+
+.btn-green 
+{
+	background-color: #4CAF50;
+}
+
+.btn-green:hover
+{
+	background-color: #4CB550; 
+}
+
+.btn-green:active
+{
+	background-color: #50A653;
+}
+
+.btn-red 
+{
+	background-color: #E83C3C;
+}
+
+.btn-red:hover
+{
+	background-color: #EA4A4A; 
+}
+
+.btn-red:active
+{
+	background-color: #D62C2C;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="text"].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
