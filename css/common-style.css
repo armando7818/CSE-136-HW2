@@ -56,6 +56,7 @@
 	background-color: #D62C2C;
 }
 
+/*style input box*/
 input[type="text"] {
   padding: 8px;
   border: solid 1px #dcdcdc;
@@ -66,4 +67,44 @@ input[type="text"]:focus,
 input[type="text"].focus {
   border: solid 1px #707070;
   box-shadow: 0 0 5px 1px #969696;
+}
+
+/*check input box*/
+input[type=checkbox].css-checkbox {
+	position:absolute; 
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label{
+	padding-left:24px;
+	height:17px; 
+	display:inline-block;
+	line-height:17px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:17px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked{
+	background-position: 0 -17px;
+}
+label.css-label {
+	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_6de93f3dd0a8cd78b0f2526c1bc6e0f7.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
