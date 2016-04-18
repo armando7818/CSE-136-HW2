@@ -1,19 +1,34 @@
-<p><a class="button" href="#popup1">Click Me</a></p>
+<!doctype html>
 
-<div id="popup1" class="overlay">
-  <div class="popup">
-    <h2>Add Bookmark</h2>
-    <a class="close" href="#">&times;</a>
-    <hr>
-    <div class="content">
-      <label for="title" class="t">Title</label>
-      <input type="text" class ="te" name="FirstName" value=""><br>
-      <label for="URL" class="u">URL</label> <input type="text" class="ur" name="LastName" value=""><br>
-      <label for="description" class="d">Description</label> <textarea id="descriptiontext"></textarea><br>
-      <label for="keywords" class="k">Keywords</label><input type="text" class ="key" name="FirstName" value=""><br>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Bookmark of the world</title>
+	  <meta name="description" content="Bookmark me!">
+		<link rel="stylesheet" href="css/pop-up.css">
+	</head>
+<body>
+
+  <p><a class="button" href="#popup1">Click Me</a></p>
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Add Bookmark</h2>
+      <a class="close" href="#">&times;</a>
+      <hr>
+      <div class="content">
+        <label for="title" class="t">Title</label>
+        <input type="text" class="te" name="FirstName" value=""><br>
+        <label for="URL" class="u">URL</label> <input type="text" class="ur" name="LastName" value=""><br>
+        <label for="description" class="d">Description</label> <textarea id="descriptiontext"></textarea><br>
+        <label for="keywords" class="k">Keywords</label><input type="text" class="key" name="FirstName" value=""><br>
+      </div>
+      <hr>
+       <div id="container">
+      <button type="button" class="deletebutton" href="">Delete</button>
+      <button type="button" class="savebutton" href="">Save</button>
+      </div>
     </div>
-    <hr>
-    <button type="button" href="">Save</button>
-
   </div>
-</div>
+</body>
+</html>

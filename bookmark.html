@@ -5,9 +5,10 @@
 	  <meta charset="utf-8">
 	  <title>Bookmark of the world</title>
 	  <meta name="description" content="Bookmark me!">
-	  <link rel="stylesheet" href="css/bookmark.css">
+	  <!--link rel="stylesheet" href="css/bookmark.css">
 	  <link rel="stylesheet" href="css/folders.css">
-	  <link rel="stylesheet" href="css/common-style.css">
+	  <link rel="stylesheet" href="css/common-style.css"-->
+		<link rel="stylesheet" href="css/pop-up.css">
 	</head>
 	<body>
 		<nav id="nav">
@@ -73,9 +74,9 @@
 				<input type="checkbox" id="check7" class="css-checkbox">
 				<label for="check7" class="css-label"></label>
 				<label for="level1-item3" class="folder-label">IMPORTANT</label>
-				<br> 
+				<br>
 			</div>
-			<div class="folder">  
+			<div class="folder">
 				<input type="checkbox" id="level1-item4" class="folder-checkbox">
 				<input type="checkbox" id="check8" class="css-checkbox">
 				<label for="check8" class="css-label"></label>
@@ -127,7 +128,7 @@
 						<label for="level3-item3" class="folder-label">Romantic</label>
 						<br>
 					</div>
-		        
+
 					<input type="checkbox" id="level2-item7" class="folder-checkbox">
 					<input type="checkbox" id="check16" class="css-checkbox">
 					<label for="check16" class="css-label"></label>
@@ -141,15 +142,15 @@
 				<label for="check17" class="css-label"></label>
 				<label for="level1-item7" class="folder-label">Recipes</label>
 				<br>
-		    </div>  
-		    <div class="folder">  
+		    </div>
+		    <div class="folder">
 				<input type="checkbox" id="level1-item8" class="folder-checkbox">
 				<input type="checkbox" id="check18" class="css-checkbox">
 				<label for="check18" class="css-label"></label>
 				<label for="level1-item8" class="folder-label">Unsorted</label>
 				<br>
 		    </div>
-		    
+
 		    <div class="folder-btns">
 		    	<select class="select-btn folder-select-btn" name="folderAction">
 		        	<option value="Add" selected>Add</option>
@@ -191,5 +192,28 @@
        		</table>
         </div>
     </div>
+
+		<p><a class="button" href="#popup1">Click Me</a></p>
+
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>Add Bookmark</h2>
+    <a class="close" href="#">&times;</a>
+    <hr>
+    <div class="content">
+      <label for="title" class="t">Title</label>
+      <input type="text" class="te" name="FirstName" value=""><br>
+      <label for="URL" class="u">URL</label> <input type="text" class="ur" name="LastName" value=""><br>
+      <label for="description" class="d">Description</label> <textarea id="descriptiontext"></textarea><br>
+      <label for="keywords" class="k">Keywords</label><input type="text" class="key" name="FirstName" value=""><br>
+    </div>
+    <hr>
+     <div id="container">
+    <button type="button" class="deletebutton" href="">Delete</button>
+    <button type="button" class="savebutton" href="">Save</button>
+    </div>
+  </div>
+</div>
+
 	</body>
 </html>
