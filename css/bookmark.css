@@ -1,18 +1,15 @@
 #nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 0.9em;
+    padding: 6px 10px;
+    position: fixed;
+    background-color: blanchedalmond;
+    top: 0px;
+    left: 0px;
+    right: 0px;  
 }
 
-#nav ul li {
-  float: left;
-  line-height: 4.5em;
-
-}
-
-.no-bullets {
-  list-style-type: none;
+.standardize-header-components
+{
+    height: 57px; 
 }
 
 #searchBox {
@@ -26,6 +23,7 @@ width: 450px;
 height: 35px;
 padding: 10px;
 overflow: hidden; /* Clear floats */
+margin: auto; 
 }
 
 #search, #submit {
