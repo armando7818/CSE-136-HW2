@@ -137,3 +137,12 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
+.pull-right
+{
+	float: right;
+}
+
+.pull-left
+{
+	float: left;
+}
