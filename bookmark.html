@@ -8,6 +8,7 @@
 	  <link rel="stylesheet" href="css/bookmark.css">
 	  <link rel="stylesheet" href="css/folders.css">
 	  <link rel="stylesheet" href="css/common-style.css">
+		<link rel="stylesheet" href="css/pop-up.css">
 	</head>
 	<body>
 		<nav id="nav">
@@ -73,9 +74,9 @@
 				<input type="checkbox" id="check7" class="css-checkbox">
 				<label for="check7" class="css-label"></label>
 				<label for="level1-item3" class="folder-label">IMPORTANT</label>
-				<br> 
+				<br>
 			</div>
-			<div class="folder">  
+			<div class="folder">
 				<input type="checkbox" id="level1-item4" class="folder-checkbox">
 				<input type="checkbox" id="check8" class="css-checkbox">
 				<label for="check8" class="css-label"></label>
@@ -127,7 +128,7 @@
 						<label for="level3-item3" class="folder-label">Romantic</label>
 						<br>
 					</div>
-		        
+
 					<input type="checkbox" id="level2-item7" class="folder-checkbox">
 					<input type="checkbox" id="check16" class="css-checkbox">
 					<label for="check16" class="css-label"></label>
@@ -141,8 +142,8 @@
 				<label for="check17" class="css-label"></label>
 				<label for="level1-item7" class="folder-label">Recipes</label>
 				<br>
-		    </div>  
-		    <div class="folder">  
+		    </div>
+		    <div class="folder">
 				<input type="checkbox" id="level1-item8" class="folder-checkbox">
 				<input type="checkbox" id="check18" class="css-checkbox">
 				<label for="check18" class="css-label"></label>
@@ -157,7 +158,7 @@
 				<label for="level1-item9" class="folder-label">New</label>
 				<br>
 		    </div>
-		    
+
 		    <div class="folder-btns">
 		    	<select class="select-btn pull-left" name="folderAction">
 		        	<option value="Add" selected>Add</option>
@@ -182,12 +183,12 @@
         			</td>
         		</tr>
         		<tr class="bookmark-item">
-       				<td class="bookmark-check-box"> 
+       				<td class="bookmark-check-box">
        					<input type="checkbox" id="check-bookmark-1" class="css-checkbox"></input>
        					<label for="check-bookmark-1" class="css-label"></label>
        				</td>
        				<td class="bookmark-title"><a href="http://www.google.com">Google</a></td>
-       				<td class="bookmark-buttons"><button class="btn">Edit</button></td>
+       				<td class="bookmark-buttons"><button class="btn"><a class="removehref" href="#popup1">Edit</a></button></td>
        				<td class="bookmark-buttons"><button class="btn">Delete</button></td>
        				<td class="bookmark-buttons"><button class="btn">Star</button></td>
        			</tr>
@@ -197,7 +198,7 @@
        			    	<label for="check-bookmark-2" class="css-label"></label>
        			    </td>
       				<td class="bookmark-title"><a href="http://www.ucsd.edu">UCSD</a></td>
-        			<td class="bookmark-buttons"><button class="btn">Edit</button></td>
+        			<td class="bookmark-buttons"><button class="btn"><a class="removehref" href="#popup1">Edit</a></button></td>
         			<td class="bookmark-buttons"><button class="btn">Delete</button></td>
         			<td class="bookmark-buttons"><button class="btn">Star</button></td>
         		</tr>
@@ -207,12 +208,32 @@
         				<label for="check-bookmark-3" class="css-label"></label>
         			</td>
         			<td class="bookmark-title"><a href="http://www.ucsd.edu">UCSD</a></td>
-        			<td class="bookmark-buttons"><button class="btn">Edit</button></td>
+        			<td class="bookmark-buttons"><button class="btn"><a class="removehref" href="#popup1">Edit</a></button></td>
         			<td class="bookmark-buttons"><button class="btn">Delete</button></td>
         			<td class="bookmark-buttons"><button class="btn">Star</button></td>
        			</tr>
        		</table>
         </div>
     </div>
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<h2>Add Bookmark</h2>
+				<a class="close" href="#">&times;</a>
+				<hr>
+				<div class="content">
+					<label for="title" class="t">Title</label>
+					<input type="text" class="te" placeholder="Title"><br>
+					<label for="URL" class="u">URL</label> <input type="text" class="ur" placeholder="URL"><br>
+					<label for="description" class="d">Description</label> <textarea id="descriptiontext" placeholder="The clicked URL's description"></textarea><br>
+					<label for="keywords" class="k">Keywords</label><input type="text" class="key" placeholder="The keywords for the clicked URL"><br>
+				</div>
+				<hr>
+				 <div id="container">
+				<button type="button" class="deletebutton" href="">Delete</button>
+				<button type="button" class="savebutton" href="">Save</button>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
