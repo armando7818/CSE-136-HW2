@@ -124,13 +124,16 @@ label.css-label {
 	user-select: none;
 }
 
+div.main {
+	margin-top: 80px;
+}
+
 table#bookmarks {
     width: 60%;
     border-collapse: collapse;
-    margin-top: 30px;
 }
 
-tr.select-all td{
+tr.select-all td {
 	height: 20px;
 	padding: 10px;
 }
@@ -142,7 +145,7 @@ tr.bookmark-item td {
     border-bottom: 1px solid #ddd;
 }
 
-div.folder{
+div.folder {
 	float:left;
 	width: 200px;
 	height:100%;
