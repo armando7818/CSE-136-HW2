@@ -5,9 +5,9 @@
 	  <meta charset="utf-8">
 	  <title>Bookmark of the world</title>
 	  <meta name="description" content="Bookmark me!">
-	  <!--link rel="stylesheet" href="css/bookmark.css">
+	  <link rel="stylesheet" href="css/bookmark.css">
 	  <link rel="stylesheet" href="css/folders.css">
-	  <link rel="stylesheet" href="css/common-style.css"-->
+	  <link rel="stylesheet" href="css/common-style.css">
 		<link rel="stylesheet" href="css/pop-up.css">
 	</head>
 	<body>
@@ -171,48 +171,45 @@
         		<tr class="bookmark-item">
        				<td><input type="checkbox"></input></td>
        				<td>aaaaaadddddddddddasfdsdfdsfsdfsadfsda</td>
-       				<td><button class="btn">Edit</button></td>
+       				<td><button class="btn"><a class="removehref" href="#popup1">Edit</a></button></td>
        				<td><button class="btn">Delete</button></td>
        				<td><button class="btn">Star</button></td>
        			</tr>
        			<tr class="bookmark-item">
        			    <td><input type="checkbox"></input></td>
       				<td>pppsdfuwerwefwefwefwefwefewfwerweqrew</td>
-        			<td><button class="btn">Edit</button></td>
+        			<td><button class="btn"><a class="removehref" href="#popup1">Edit</a></button></td>
         			<td><button class="btn">Delete</button></td>
         			<td><button class="btn">Star</button></td>
         		</tr>
         		<tr class="bookmark-item">
         			<td><input type="checkbox"></input></td>
         			<td>sdfwereeeeeeeeee</td>
-        			<td><button class="btn">Edit</button></td>
+        			<td><button class="btn" ><a class="removehref" href="#popup1">Edit</a></button></td>
         			<td><button class="btn">Delete</button></td>
         			<td><button class="btn">Star</button></td>
        			</tr>
        		</table>
         </div>
     </div>
-
-		<p><a class="button" href="#popup1">Click Me</a></p>
-
 <div id="popup1" class="overlay">
-  <div class="popup">
-    <h2>Add Bookmark</h2>
-    <a class="close" href="#">&times;</a>
-    <hr>
-    <div class="content">
-      <label for="title" class="t">Title</label>
-      <input type="text" class="te" name="FirstName" value=""><br>
-      <label for="URL" class="u">URL</label> <input type="text" class="ur" name="LastName" value=""><br>
-      <label for="description" class="d">Description</label> <textarea id="descriptiontext"></textarea><br>
-      <label for="keywords" class="k">Keywords</label><input type="text" class="key" name="FirstName" value=""><br>
-    </div>
-    <hr>
-     <div id="container">
-    <button type="button" class="deletebutton" href="">Delete</button>
-    <button type="button" class="savebutton" href="">Save</button>
-    </div>
-  </div>
+	<div class="popup">
+		<h2>Add Bookmark</h2>
+		<a class="close" href="#">&times;</a>
+		<hr>
+		<div class="content">
+			<label for="title" class="t">Title</label>
+			<input type="text" class="te" placeholder="Title"><br>
+			<label for="URL" class="u">URL</label> <input type="text" class="ur" placeholder="URL"><br>
+			<label for="description" class="d">Description</label> <textarea id="descriptiontext" placeholder="The clicked URL's description"></textarea><br>
+			<label for="keywords" class="k">Keywords</label><input type="text" class="key" placeholder="The keywords for the clicked URL"><br>
+		</div>
+		<hr>
+		 <div id="container">
+		<button type="button" class="deletebutton" href="">Delete</button>
+		<button type="button" class="savebutton" href="">Save</button>
+		</div>
+	</div>
 </div>
 
 	</body>
