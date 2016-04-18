@@ -8,6 +8,7 @@
 	  <link rel="stylesheet" href="css/bookmark.css">
 	  <link rel="stylesheet" href="css/folders.css">
 	  <link rel="stylesheet" href="css/common-style.css">
+		<link rel="stylesheet" href="css/pop-up.css">
 	</head>
 	<body>
 		<nav id="nav">
@@ -169,8 +170,11 @@
 		    </div>
 		</div>
 		<div class="url-actions-container">
-        	<button class="btn"><span style="line-height: 22px;">New</span><img src="img/cross.png" height="25px" /></button>
-        	<button class="btn"><span>Import</span><img src="img/arrow.png" height="25px" /></button>
+        	<button class="btn">New  </span><img src="img/cross.png" height="25px" /></button>
+        	<button class="btn" onclick="document.getElementById('fileInput').click();">Import<img src="img/arrow.png" height="25px" /></button>
+        	<button class="btn">Export  <img src="img/interface.png" height="25px"/></button>
+        	<button class="btn">Delete  <img src="img/delete.png" height="25px"/></button>
+        	<input type="file" id="fileInput" style="display:none;"></input>
         	<table id="bookmarks">
         		<tr class="select-all">
         			<td class="bookmark-check-box">
@@ -184,7 +188,7 @@
        					<label for="check-bookmark-1" class="css-label"></label>
        				</td>
        				<td class="bookmark-title"><a href="http://www.google.com">Google</a></td>
-       				<td class="bookmark-buttons"><button class="btn"><img src="img/signature.png" height="25px"/>Edit</button></td>
+       				<td class="bookmark-buttons"><button class="btn"><a class="removehref" href="#popup1"><img src="img/signature.png" height="25px"/>Edit</a></button></td>
        				<td class="bookmark-buttons"><button class="btn"><img src="img/delete.png" height="25px" />Delete</button></td>
        				<td class="bookmark-buttons"><button class="btn"><img src="img/shape.png" height="25px" />Favorite</button></td>
        			</tr>
@@ -194,7 +198,7 @@
        			    	<label for="check-bookmark-2" class="css-label"></label>
        			    </td>
       				<td class="bookmark-title"><a href="http://www.ucsd.edu">UCSD</a></td>
-        			<td class="bookmark-buttons"><button class="btn"><img src="img/signature.png" height="25px"/>Edit</button></td>
+        			<td class="bookmark-buttons"><button class="btn"><a class="removehref" href="#popup1"><img src="img/signature.png" height="25px"/>Edit</a></button></td>
         			<td class="bookmark-buttons"><button class="btn"><img src="img/delete.png" height="25px" />Delete</button></td>
         			<td class="bookmark-buttons"><button class="btn"><img src="img/favorite.png" height="25px" />Favorited</button></td>
         		</tr>
@@ -204,12 +208,32 @@
         				<label for="check-bookmark-3" class="css-label"></label>
         			</td>
         			<td class="bookmark-title"><a href="http://www.ucsd.edu">UCSD</a></td>
-        			<td class="bookmark-buttons"><button class="btn"><img src="img/signature.png" height="25px"/>Edit</button></td>
+        			<td class="bookmark-buttons"><button class="btn"><a class="removehref" href="#popup1"><img src="img/signature.png" height="25px"/>Edit</a></button></td>
         			<td class="bookmark-buttons"><button class="btn"><img src="img/delete.png" height="25px" />Delete</button></td>
         			<td class="bookmark-buttons"><button class="btn"><img src="img/shape.png" height="25px" />Favorite</button></td>
        			</tr>
        		</table>
         </div>
     </div>
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<h2>Add Bookmark</h2>
+				<a class="close" href="#">&times;</a>
+				<hr>
+				<div class="content">
+					<label for="title" class="t">Title</label>
+					<input type="text" class="te" placeholder="Title"><br>
+					<label for="URL" class="u">URL</label> <input type="text" class="ur" placeholder="URL"><br>
+					<label for="description" class="d">Description</label> <textarea id="descriptiontext" placeholder="The clicked URL's description"></textarea><br>
+					<label for="keywords" class="k">Keywords</label><input type="text" class="key" placeholder="The keywords for the clicked URL"><br>
+				</div>
+				<hr>
+				 <div id="container">
+				<button type="button" class="deletebutton" href="">Delete</button>
+				<button type="button" class="savebutton" href="">Save</button>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
