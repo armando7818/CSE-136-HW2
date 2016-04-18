@@ -85,7 +85,7 @@ div.folder-btns {
 
 #folder-btn-confirm {
     text-decoration: none;
-    color: white; /* imitate button */
+    color: black; /* imitate button */
 }
 
 #folder-hidden {
