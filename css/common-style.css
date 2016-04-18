@@ -138,12 +138,20 @@ table#bookmarks {
     border-collapse: collapse;
 }
 
-tr.select-all td {
+td.bookmark-check-box {
 	height: 20px;
 	padding: 10px;
 }
 
-tr.bookmark-item td {
+tr.bookmark-item td.bookmark-buttons {
+	height: 30px;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr.bookmark-item td.bookmark-title {
+	width: 500px;
 	height: 30px;
     padding: 10px;
     text-align: left;
