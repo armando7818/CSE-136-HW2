@@ -85,3 +85,16 @@ div.folder-btns {
 .folder-btn {
     float: right;
 }
+
+#folder-btn-confirm {
+    text-decoration: none;
+    color: white; /* imitate button */
+}
+
+#folder-hidden {
+    display: none;
+}
+
+#folder-hidden:target {
+    display: block;
+}

@@ -149,15 +149,23 @@
 				<label for="level1-item8" class="folder-label">Unsorted</label>
 				<br>
 		    </div>
+
+		    <div class="folder" id="folder-hidden">
+		    	<input type="checkbox" id="level1-item9" class="folder-checkbox">
+				<input type="checkbox" id="check19" class="css-checkbox">
+				<label for="check19" class="css-label"></label>
+				<label for="level1-item9" class="folder-label">New</label>
+				<br>
+		    </div>
 		    
 		    <div class="folder-btns">
-		    	<select class="select-btn folder-select-btn" name="folderAction">
+		    	<select class="select-btn pull-left" name="folderAction">
 		        	<option value="Add" selected>Add</option>
 		        	<option value="Delete">Delete</option>
 		        	<option value="Import">Import</option>
 		        	<option value="Export">Export</option>
 		        </select>
-		        <button class="btn folder-btn">OK</button>
+		        <button class="btn pull-right"><a id="folder-btn-confirm" href="#folder-hidden">OK</a></button>
 		    </div>
 		</div>
 		<div class="container">
