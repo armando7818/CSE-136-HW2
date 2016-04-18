@@ -1,32 +1,87 @@
-input[type=checkbox]:focus + label {
-  outline: none;
-  background-color: #b9c3c9;
+input[type=checkbox].folder-checkbox {
+    position:absolute; 
+    z-index:-1000; 
+    left:-1000px;
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px;
+    padding:0; 
+    border:0;
+}
+
+label.folder-label{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  height:17px; 
+  display:inline-block;
+  line-height:17px;
+  font-size:17px;
+  vertical-align:middle;
+  cursor:pointer;
 }
 
 /*
-input[type=checkbox], label {
-    float: left;
-}
-
-input[type=checkbox] {
-	clear: left;
-}
-*/
-
-input[type=checkbox].css-checkbox + label.css-label{
-    float: left;
+label.folder-label{
     clear: left;
 }
 
-input[type=checkbox].css-checkbox {
+input[type=checkbox].folder-checkbox {
+    float: left;
+    clear:left;
+}
+*/
+
+div.subfolder {
+    display: none;
+    margin-left: 25px;
+}
+
+input[type=checkbox].folder-checkbox:checked ~ div.subfolder {
+    display: block;
+}
+
+/*
+label.folder-label::before {
+    background-image: url('../img/folder_closed.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content: "";
+    margin-right: 5px;
+}
+
+input[type="checkbox"].folder-checkbox:checked + label.folder-label::before {
+    background-image: url('../img/folder_open.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content: "";
+    margin-right: 5px;
+}
+*/
+
+div.folder-btns {
+    position: absolute;
+    width: inherit;
+    bottom: 0;
+    white-space: nowrap;
+}
+
+.folder-select-btn {
     float: left;
 }
 
-.subfolder {
-	display: none;
-	margin-left: 25px;
-}
-
-input[type=checkbox]:checked ~ .subfolder {
-    display: block;
+.folder-btn {
+    float: right;
 }
