@@ -1,0 +1,32 @@
+input[type=checkbox]:focus + label {
+  outline: none;
+  background-color: #b9c3c9;
+}
+
+/*
+input[type=checkbox], label {
+    float: left;
+}
+
+input[type=checkbox] {
+	clear: left;
+}
+*/
+
+input[type=checkbox].css-checkbox + label.css-label{
+    float: left;
+    clear: left;
+}
+
+input[type=checkbox].css-checkbox {
+    float: left;
+}
+
+.subfolder {
+	display: none;
+	margin-left: 25px;
+}
+
+input[type=checkbox]:checked ~ .subfolder {
+    display: block;
+}

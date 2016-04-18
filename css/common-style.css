@@ -69,7 +69,7 @@ input[type="text"].focus {
   box-shadow: 0 0 5px 1px #969696;
 }
 
-/*check input box*/
+/*check input boxi, use 'css-checkbox' inside of input checkbox as class*/
 input[type=checkbox].css-checkbox {
 	position:absolute; 
 	z-index:-1000; 
@@ -99,6 +99,8 @@ input[type=checkbox].css-checkbox + label.css-label{
 input[type=checkbox].css-checkbox:checked{
 	background-position: 0 -17px;
 }
+
+/*use class 'css-label' inside of label*/
 label.css-label {
 	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_6de93f3dd0a8cd78b0f2526c1bc6e0f7.png);
 	-webkit-touch-callout: none;
@@ -108,3 +110,17 @@ label.css-label {
 	-ms-user-select: none;
 	user-select: none;
 }
+
+table#bookmarks {
+    width: 60%;
+    border-collapse: collapse;
+}
+
+th, td {
+	height: 50px;
+    padding: 15px;
+    text-align: left;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
