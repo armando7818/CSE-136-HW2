@@ -12,7 +12,6 @@ h3.folders-header-text {
     vertical-align: middle;
 }
 
-
 input[type=checkbox].folder-checkbox {
     position:absolute; 
     z-index:-1000; 
@@ -40,6 +39,10 @@ label.folder-label{
   font-size:17px;
   vertical-align:middle;
   cursor:pointer;
+}
+
+label.empty-folder-label {
+    cursor: default;
 }
 
 /*
