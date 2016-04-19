@@ -1,5 +1,9 @@
+label.folder-label, h3.folders-header-text, a#folder-btn-confirm {
+    font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
+}
+
 div.folders-header {
-    line-height: 35px;
+    line-height: 43px;
 }
 
 h3.folders-header-text {
@@ -92,11 +96,6 @@ div.folder-btns {
 
 .folder-btn {
     float: right;
-}
-
-#folder-btn-confirm {
-    text-decoration: none;
-    color: black; /* imitate button */
 }
 
 #folder-hidden {
