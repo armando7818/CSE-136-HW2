@@ -1,3 +1,14 @@
+div.folders-header {
+    line-height: 35px;
+}
+
+h3.folders-header-text {
+    margin: 0;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+
 input[type=checkbox].folder-checkbox {
     position:absolute; 
     z-index:-1000; 
