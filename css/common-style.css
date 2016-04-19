@@ -135,6 +135,14 @@ div.main {
 	height: 100%;
 }
 
+@media screen and (max-width: 920px) {
+    div.main {
+		margin-top: 126px;
+		height: 100%;
+	}
+}
+
+
 table#bookmarks {
     width: 80%;
     border-collapse: collapse;
