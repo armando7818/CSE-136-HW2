@@ -180,7 +180,8 @@
 		        	   <option value="Import">Import</option>
 		        	   <option value="Export">Export</option>
 		        </select>
-		        <a id="folder-btn-confirm" class="pull-right btn btn-default" href="#folder-hidden">OK</a>
+		        <a id="folder-btn-confirm" class="pull-right btn btn-default" href="#folder-hidden"
+		            onclick="document.getElementById('fileInput').click()">OK</a>
 		    </div>
 		</div>
 		<div class="url-actions-container">
@@ -189,9 +190,10 @@
         		<img class="align-icon" src="img/cross.png" alt="Cross"/>
         	</button>
         	<button class="btn btn-default" onclick="document.getElementById('fileInput').click();">Import<img class = "align-icon" src="img/arrow.png" alt="Arrow"/></button>
-        	<button class="btn btn-default">Export  <img class = "align-icon" src="img/interface.png" alt="Interface"/></button>
+        	<button class="btn btn-default" onclick="document.getElementById('fileExport').click();">Export  <img class = "align-icon" src="img/interface.png" alt="Interface"/></button>
         	<button class="btn btn-red">Delete  <img class = "align-icon" src="img/delete.png" alt="Delete"/></button>
         	<input type="file" id="fileInput" style="display:none;">
+        	<a id="fileExport" href="exported-bookmarks.txt" style="display:none" download></a>
         	<table id="bookmarks">
         		<tr class="select-all">
         			<td class="bookmark-check-box">
