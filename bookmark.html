@@ -19,7 +19,8 @@
 	        	<option value="url">URL</option>
 	        	<option value="favorites">Favorites</option>
 	        	<option value="createDate">Create Date</option>
-	        	<option value="lastVisit">Last Visit</option>
+	        	<option value="lastVisit">Last Visits</option>
+	        	<option value="stared">Stared</option>
 	        </select>
 	        <form id="searchBox">
 				<input id="search" type="search" placeholder="Search through current bookmarks">
@@ -262,7 +263,7 @@
 						<input id="URL" class="format-input-boxes" type="text" placeholder="URL">
 					</div>
 					<div class="format-bookmark-row">
-						<label id = "description-label" for="description">Description</label> 
+						<label class = "description-label" for="description">Description</label> 
 						<textarea id="description" class="format-input-boxes" placeholder="The clicked URL's description"></textarea>
 					</div>
 					<div class="format-bookmark-row">
@@ -270,7 +271,7 @@
 						<input id="keywords" class="format-input-boxes" type="text" placeholder="The keywords for the clicked URL">
 					</div>
 				<hr>
-				 <div id="container">
+				 <div>
 				<button type="button" id = "save-button-modal" class="savebutton" href="">Save</button>
 				</div>
 			</div>
@@ -291,7 +292,7 @@
 						<input class="format-input-boxes" type="text" placeholder="URL">
 					</div>
 					<div class="format-bookmark-row">
-						<label id = "description-label" for="description">Description</label> 
+						<label class = "description-label" for="description">Description</label> 
 						<textarea class="format-input-boxes" placeholder="The clicked URL's description"></textarea>
 					</div>
 					<div class="format-bookmark-row">
@@ -299,7 +300,7 @@
 						<input class="format-input-boxes" type="text" placeholder="The keywords for the clicked URL">
 					</div>
 				<hr>
-				 <div id="container">
+				 <div>
 				<button type="button" class="deletebutton">Delete</button>
 				<button type="button" class="savebutton">Save</button>
 				</div>
@@ -316,7 +317,7 @@
 						<p>"Bookmark name here"</p>
 					</div>
 				<hr>
-				<div id="container">
+				<div>
 				<button type="button" class="deletebutton" id = "delete-button-modal" href="">Delete</button>
 				</div>
 			</div>
