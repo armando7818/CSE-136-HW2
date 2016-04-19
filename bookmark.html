@@ -236,13 +236,22 @@
 				<h2>Add Bookmark</h2>
 				<a class="close" href="#">&times;</a>
 				<hr>
-				<div class="content">
-					<label for="title" class="t">Title</label>
-					<input type="text" class="te" id="title" placeholder="Title"><br>
-					<label for="URL" class="u">URL</label> <input type="text" id="URL" class="ur" placeholder="URL"><br>
-					<label for="descriptiontext" class="d">Description</label> <textarea id="descriptiontext" placeholder="The clicked URL's description"></textarea><br>
-					<label for="keywords" class="k">Keywords</label><input id="keywords" type="text" class="key" placeholder="The keywords for the clicked URL"><br>
-				</div>
+				<div class="format-bookmark-row">
+						<label for="title" >Title</label>
+						<input id="title" class="format-input-boxes" type="text" placeholder="Title">
+					</div>
+					<div class="format-bookmark-row">
+						<label for="URL" >URL</label> 
+						<input id="URL" class="format-input-boxes" type="text" placeholder="URL">
+					</div>
+					<div class="format-bookmark-row">
+						<label id = "description-label" for="description">Description</label> 
+						<textarea id="description" class="format-input-boxes" placeholder="The clicked URL's description"></textarea>
+					</div>
+					<div class="format-bookmark-row">
+						<label for="keywords" >Keywords</label>
+						<input id="keywords" class="format-input-boxes" type="text" placeholder="The keywords for the clicked URL">
+					</div>
 				<hr>
 				 <div id="container">
 				<button type="button" class="deletebutton" href="">Delete</button>
